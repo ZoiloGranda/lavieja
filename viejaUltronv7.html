@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<title>La vieja</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" type="text/css" href="lavieja.css">
+</HEAD>
+<BODY id="fondo">
+
+<FORM id="formulario1">
+
+<TABLE align="center" border="1" onMousedown="turno()" id="tablaprincipal">
+	
+	<!--Se agrega una celda de datos-->
+	<TR>
+		<TD width="55" height="60" onMousedown="jugada1(), ftabla(), brainiac(1)" class="cuadritos"><a href="#"><img src="" id="cuadro1" ></a></TD>
+		<TD width="55" height="60" onMousedown="jugada2(), ftabla(), brainiac(2)" class="cuadritos"><a href="#"><img src="" id="cuadro2"></a></TD>
+		<TD width="55" height="60" onMousedown="jugada3(), ftabla(), brainiac(3)" class="cuadritos"><a href="#"><img src="" id="cuadro3"></a></TD>
+	</TR>
+	<TR>
+		<TD width="55" height="60" onMousedown="jugada4(), ftabla(), brainiac(4)" class="cuadritos"><a href="#"><img src="" id="cuadro4"></a></TD>
+		<TD width="55" height="60" onMousedown="jugada5(), ftabla(), brainiac(5)" class="cuadritos"><a href="#"><img src="" id="cuadro5"></a></TD>
+		<TD width="55" height="60" onMousedown="jugada6(), ftabla(), brainiac(6)" class="cuadritos"><a href="#"><img src="" id="cuadro6"></a></TD>
+	</TR>
+	<TR>
+		<TD width="55" height="60" onMousedown="jugada7(), ftabla(), brainiac(7)" class="cuadritos"><a href="#"><img src="" id="cuadro7"></a></TD>
+		<TD width="55" height="60" onMousedown="jugada8(), ftabla(), brainiac(8)" class="cuadritos"><a href="#"><img src="" id="cuadro8"></a></TD>
+		<TD width="55" height="60" onMousedown="jugada9(), ftabla(), brainiac(9)" class="cuadritos"><a href="#"><img src="" id="cuadro9"></a></TD>
+	</TR>
+	<TABLE align="center" border="1">
+	<TR>
+		<TD width="55" height="60" align="center">Turno <img src="" id="cuadro10"></TD>
+		<TD width="55" height="60" align="center">Reiniciar<br><a href="#"><img src="img/Reiniciar.png" width="55" height="60" onMousedown="reiniciar1()"> </TD>
+	</TR>
+	</TABLE>
+		
+	<TABLE align="center" border="1">
+	<TR>
+		<TD width="55" height="60" align="center"><img src="img/X.png"></TD>
+		<TD width="110" height="60" align="center" ><img src="img/0.png" width="55" height="60" id="X1"><img src="img/0.png" width="55" height="60" id="X2"> </TD>
+		</TR>
+		<TR>
+		<TD width="55" height="60" align="center"><img src="img/O.png"></TD>
+		<TD width="110" height="60" align="center" ><img src="img/0.png" width="55" height="60" id="O1"><img src="img/0.png" width="55" height="60" id="O2"> </TD>
+	</TR>
+	</TABLE>
+		
+</FORM>
+<div id="botones">
+<a href="#" class="myButton" onclick="unjugador()">Un Jugador</a>
+<a href="#" class="myButton" onclick="dosjugadores()">Dos Jugadores</a>
+<a href="#" class="myButton" onclick="cambiarfondo()">Cambiar fondo</a>
+</div>
+
+</BODY>
+<script src="lavieja.js"></script>
+
+</HTML>
